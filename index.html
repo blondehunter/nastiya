@@ -49,7 +49,7 @@
 </head>
 <body>
 
-<div id="message">Enter your name, surname, and birthday:</div>
+<div id="message">Enter your name, surname, and birthday in format of day/month/year:</div>
 <input type="text" id="nameInput" placeholder="Name">
 <input type="text" id="surnameInput" placeholder="Surname">
 <input type="date" id="birthdayInput">
@@ -65,7 +65,7 @@
     if (birthdayInput === '2005-01-30') {  // Check if entered birthday is 30 January 2005
       var age = calculateAge(new Date(birthdayInput));
 
-      document.getElementById("resultMessage").innerHTML = "Happy " + age + "th Birthday, " + name + " " + surname + "! 🎉 Let's celebrate together! 🎂";
+      document.getElementById("resultMessage").innerHTML = "Happy " + age + "th Birthday angel " + name + " " + surname + "! 🎉 Let's celebrate together! 🎂";
     } else {
       alert('Sorry, today is not the specified birthday (30/01/2005).');
     }
